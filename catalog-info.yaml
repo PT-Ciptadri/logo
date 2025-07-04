@@ -1,0 +1,18 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "logo"
+  links:
+    - url: https://dashboard.example.com
+      title: My Dashboard
+      icon: dashboard
+  # description: Sistem kesiswaan backend (API Go)
+  annotations:
+    github.com/project-slug: PT-Ciptadri/logo
+    backstage:source-location: https://github.com/PT-Ciptadri/logo/tree/main/
+spec:
+  type: service
+  lifecycle: experimental
+  owner: group:Frontend
+  consumesApis:
+    - simkes-go
